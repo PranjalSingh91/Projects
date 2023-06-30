@@ -1,0 +1,38 @@
+CREATE TABLE :
+
+create table stock(date date, symbol string, qty int, price_per_qty int, type string );
+
+
+INSERT STATEMENTS:
+
+insert into stock values ('2022-07-07',	'REL2300PE',	200,	50,	'buy')
+,('2022-07-07',	'IDBI2300PE',	200,	50,	'sell')
+,('2022-07-15',	'REL2300PE',	100,	50,	'buy')
+,('2022-07-15',	'IDBI2300PE',	20,	50,	'buy')
+,('2022-07-16',	'REL2300PE',	200,	35,	'buy')
+,('2022-07-30',	'IDBI2300PE',	60,	50,	'sell')
+,('2022-07-30',	'REL2300PE',	450,	45,	'sell')
+,('2022-07-30',	'IDBI2300PE',	200,	25,	'sell');
+
+
+Problem :
+Calculate profit and loss in stock market.
+
+
+Description on stackoverflow:
+https://stackoverflow.com/questions/76558051/i-need-to-calculate-profit-loss-for-given-stock-data-set-ensuring-that-the-firs/76587354#76587354
+
+
+Solution in HIVE:
+
+select date,symbol,total_profit from (
+    select date
+    ,symbol
+    ,sum(qty * (CASE 
+                    WHEN type='buy' THEN price_per_qty 
+                    ELSE (price_per_qty*(-1)) 
+                    END
+                )
+        )  over (partition by symbol order by date  rows between unbounded preceding and current row) as total_profit
+        ,row_number() over( partition by symbol order by date desc ) as rn
+    from stock1) as running_sum where rn=1;
