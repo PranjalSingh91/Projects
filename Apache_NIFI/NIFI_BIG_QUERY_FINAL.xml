@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.3">
+    <description></description>
+    <groupId>24e857a0-0188-1000-6fd4-e33d9158513b</groupId>
+    <name>NIFI_BIG_QUERY_FINAL</name>
+    <snippet>
+        <processGroups>
+            <id>3f762615-0e45-3938-0000-000000000000</id>
+            <parentGroupId>f89ce938-9eb9-3eec-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>0.0</y>
+            </position>
+            <versionedComponentId>3f762615-0e45-3938-8e60-23058ca8109f</versionedComponentId>
+            <comments></comments>
+            <contents>
+                <connections>
+                    <id>4ca540f8-fd43-3831-0000-000000000000</id>
+                    <parentGroupId>3f762615-0e45-3938-0000-000000000000</parentGroupId>
+                    <versionedComponentId>4ca540f8-fd43-3831-aa4f-12e789d69b4c</versionedComponentId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>3f762615-0e45-3938-0000-000000000000</groupId>
+                        <id>04dede82-6290-3643-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>04dede82-6290-3643-8f9a-97ed9ce64ded</versionedComponentId>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>3f762615-0e45-3938-0000-000000000000</groupId>
+                        <id>d884e51a-0a0e-3571-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>d884e51a-0a0e-3571-a11a-a7d32778a7f5</versionedComponentId>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <processors>
+                    <id>04dede82-6290-3643-0000-000000000000</id>
+                    <parentGroupId>3f762615-0e45-3938-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>912.0</x>
+                        <y>160.0</y>
+                    </position>
+                    <versionedComponentId>04dede82-6290-3643-8f9a-97ed9ce64ded</versionedComponentId>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.21.0</version>
+                    </bundle>
+                    <config>
+                        <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Record Reader</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.serialization.RecordReaderFactory</identifiesControllerService>
+    <name>Record Reader</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Record Writer</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.serialization.RecordSetWriterFactory</identifiesControllerService>
+    <name>Record Writer</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Records Per Split</key>
+<value>
+    <name>Records Per Split</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Record Reader</key>
+                            </entry>
+                            <entry>
+<key>Record Writer</key>
+                            </entry>
+                            <entry>
+<key>Records Per Split</key>
+                            </entry>
+                        </properties>
+                        <retryCount>10</retryCount>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>SplitRecord</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>failure</name>
+                        <retry>false</retry>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>original</name>
+                        <retry>false</retry>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>splits</name>
+                        <retry>false</retry>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.SplitRecord</type>
+                </processors>
+                <processors>
+                    <id>d884e51a-0a0e-3571-0000-000000000000</id>
+                    <parentGroupId>3f762615-0e45-3938-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>336.0</x>
+                        <y>176.0</y>
+                    </position>
+                    <versionedComponentId>d884e51a-0a0e-3571-a11a-a7d32778a7f5</versionedComponentId>
+                    <bundle>
+                        <artifact>nifi-scripting-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.21.0</version>
+                    </bundle>
+                    <config>
+                        <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Script Engine</key>
+<value>
+    <name>Script Engine</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Script File</key>
+<value>
+    <name>Script File</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Script Body</key>
+<value>
+    <name>Script Body</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Module Directory</key>
+<value>
+    <name>Module Directory</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Script Engine</key>
+<value>python</value>
+                            </entry>
+                            <entry>
+<key>Script File</key>
+                            </entry>
+                            <entry>
+<key>Script Body</key>
+<value>import sys
+import cloud
+def query_stackoverflow():
+    client = bigquery.Client()
+    query_job = client.query(
+        """
+        SELECT
+          CONCAT(
+            'https://stackoverflow.com/questions/',
+            CAST(id as STRING)) as url,
+          view_count
+        FROM `bigquery-public-data.stackoverflow.posts_questions`
+        WHERE tags like '%google-bigquery%'
+        ORDER BY view_count DESC
+        LIMIT 10"""
+    )
+
+    results = query_job.result()  # Waits for job to complete.
+
+    for row in results:
+        print("{} : {} views".format(row.url, row.view_count))
+
+
+if __name__ == "__main__":
+    query_stackoverflow()</value>
+                            </entry>
+                            <entry>
+<key>Module Directory</key>
+<value>C:\users\psingh\appdata\local\packages\pythonsoftwarefoundation.python.3.11_qbz5n2kfra8p0\localcache\local-packages\python311\site-packages\google\</value>
+                            </entry>
+                        </properties>
+                        <retryCount>10</retryCount>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>ExecuteScript</name>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>failure</name>
+                        <retry>false</retry>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                        <retry>false</retry>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.script.ExecuteScript</type>
+                </processors>
+            </contents>
+            <defaultBackPressureDataSizeThreshold>1 GB</defaultBackPressureDataSizeThreshold>
+            <defaultBackPressureObjectThreshold>10000</defaultBackPressureObjectThreshold>
+            <defaultFlowFileExpiration>0 sec</defaultFlowFileExpiration>
+            <flowfileConcurrency>UNBOUNDED</flowfileConcurrency>
+            <flowfileOutboundPolicy>STREAM_WHEN_AVAILABLE</flowfileOutboundPolicy>
+            <name>NIFI_BIGQUERY</name>
+            <variables/>
+        </processGroups>
+    </snippet>
+    <timestamp>08/17/2023 16:26:17 UTC</timestamp>
+</template>

@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.3">
+    <description></description>
+    <groupId>24e857a0-0188-1000-6fd4-e33d9158513b</groupId>
+    <name>RETRY_EMAIL_FINAL</name>
+    <snippet>
+        <processGroups>
+            <id>d0d14c73-d603-3fa8-0000-000000000000</id>
+            <parentGroupId>f89ce938-9eb9-3eec-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>0.0</y>
+            </position>
+            <versionedComponentId>d0d14c73-d603-3fa8-9a50-12baacc18734</versionedComponentId>
+            <comments></comments>
+            <contents>
+                <connections>
+                    <id>2559039b-d43c-3d66-0000-000000000000</id>
+                    <parentGroupId>d0d14c73-d603-3fa8-0000-000000000000</parentGroupId>
+                    <versionedComponentId>2559039b-d43c-3d66-9784-a71dfaffbbfa</versionedComponentId>
+                    <backPressureDataSizeThreshold>0 MB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>0</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>d0d14c73-d603-3fa8-0000-000000000000</groupId>
+                        <id>266f4676-ac75-30ee-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>266f4676-ac75-30ee-8cd8-8e1a1c9ecaf2</versionedComponentId>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>failure</selectedRelationships>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>d0d14c73-d603-3fa8-0000-000000000000</groupId>
+                        <id>85e971e4-908c-380d-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>85e971e4-908c-380d-8726-9b9d9baf9dfc</versionedComponentId>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>389cabe6-9278-3741-0000-000000000000</id>
+                    <parentGroupId>d0d14c73-d603-3fa8-0000-000000000000</parentGroupId>
+                    <versionedComponentId>389cabe6-9278-3741-8d67-ffe67c37d710</versionedComponentId>
+                    <backPressureDataSizeThreshold>0 MB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>0</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>d0d14c73-d603-3fa8-0000-000000000000</groupId>
+                        <id>5cb6eaf5-9a93-3c6f-0000-000000000000</id>
+                        <type>OUTPUT_PORT</type>
+                        <versionedComponentId>5cb6eaf5-9a93-3c6f-a985-a63bafc211aa</versionedComponentId>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>d0d14c73-d603-3fa8-0000-000000000000</groupId>
+                        <id>266f4676-ac75-30ee-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>266f4676-ac75-30ee-8cd8-8e1a1c9ecaf2</versionedComponentId>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>44c95dac-ec12-3bb9-0000-000000000000</id>
+                    <parentGroupId>d0d14c73-d603-3fa8-0000-000000000000</parentGroupId>
+                    <versionedComponentId>44c95dac-ec12-3bb9-bb3c-f202ef1f39c4</versionedComponentId>
+                    <backPressureDataSizeThreshold>0 MB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>0</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>d0d14c73-d603-3fa8-0000-000000000000</groupId>
+                        <id>3f5bd6e4-4bbb-3620-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>3f5bd6e4-4bbb-3620-90f0-51b550c87e1a</versionedComponentId>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <source>
+                        <groupId>d0d14c73-d603-3fa8-0000-000000000000</groupId>
+                        <id>8fc23a88-6b5e-36bb-0000-000000000000</id>
+                        <type>INPUT_PORT</type>
+                        <versionedComponentId>8fc23a88-6b5e-36bb-ac84-f4506e37438b</versionedComponentId>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>47e290fb-56f9-35ce-0000-000000000000</id>
+                    <parentGroupId>d0d14c73-d603-3fa8-0000-000000000000</parentGroupId>
+                    <versionedComponentId>47e290fb-56f9-35ce-93be-100290f63d2f</versionedComponentId>
+                    <backPressureDataSizeThreshold>0 MB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>0</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>d0d14c73-d603-3fa8-0000-000000000000</groupId>
+                        <id>4219127a-8fea-35e2-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>4219127a-8fea-35e2-a2a6-caae41c2e754</versionedComponentId>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>d0d14c73-d603-3fa8-0000-000000000000</groupId>
+                        <id>3f5bd6e4-4bbb-3620-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>3f5bd6e4-4bbb-3620-90f0-51b550c87e1a</versionedComponentId>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>8b39ae4d-f0ff-37ff-0000-000000000000</id>
+                    <parentGroupId>d0d14c73-d603-3fa8-0000-000000000000</parentGroupId>
+                    <versionedComponentId>8b39ae4d-f0ff-37ff-9e40-22f2743dfc0d</versionedComponentId>
+                    <backPressureDataSizeThreshold>0 MB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>0</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>d0d14c73-d603-3fa8-0000-000000000000</groupId>
+                        <id>85e971e4-908c-380d-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>85e971e4-908c-380d-8726-9b9d9baf9dfc</versionedComponentId>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>email</selectedRelationships>
+                    <source>
+                        <groupId>d0d14c73-d603-3fa8-0000-000000000000</groupId>
+                        <id>4219127a-8fea-35e2-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>4219127a-8fea-35e2-a2a6-caae41c2e754</versionedComponentId>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>fb95d35c-7423-3d52-0000-000000000000</id>
+                    <parentGroupId>d0d14c73-d603-3fa8-0000-000000000000</parentGroupId>
+                    <versionedComponentId>fb95d35c-7423-3d52-8d39-d6ceb7d43147</versionedComponentId>
+                    <backPressureDataSizeThreshold>0 MB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>0</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>d0d14c73-d603-3fa8-0000-000000000000</groupId>
+                        <id>5cb6eaf5-9a93-3c6f-0000-000000000000</id>
+                        <type>OUTPUT_PORT</type>
+                        <versionedComponentId>5cb6eaf5-9a93-3c6f-a985-a63bafc211aa</versionedComponentId>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                    <name></name>
+                    <selectedRelationships>unmatched</selectedRelationships>
+                    <source>
+                        <groupId>d0d14c73-d603-3fa8-0000-000000000000</groupId>
+                        <id>4219127a-8fea-35e2-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                        <versionedComponentId>4219127a-8fea-35e2-a2a6-caae41c2e754</versionedComponentId>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <inputPorts>
+                    <id>8fc23a88-6b5e-36bb-0000-000000000000</id>
+                    <parentGroupId>d0d14c73-d603-3fa8-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1773.935302734375</x>
+                        <y>176.5811999511719</y>
+                    </position>
+                    <versionedComponentId>8fc23a88-6b5e-36bb-ac84-f4506e37438b</versionedComponentId>
+                    <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                    <name>input</name>
+                    <state>STOPPED</state>
+                    <type>INPUT_PORT</type>
+                    <validationErrors>'Port 'input'' is invalid because Port has no incoming connections</validationErrors>
+                </inputPorts>
+                <outputPorts>
+                    <id>5cb6eaf5-9a93-3c6f-0000-000000000000</id>
+                    <parentGroupId>d0d14c73-d603-3fa8-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1771.773681640625</x>
+                        <y>289.53806152343753</y>
+                    </position>
+                    <versionedComponentId>5cb6eaf5-9a93-3c6f-a985-a63bafc211aa</versionedComponentId>
+                    <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                    <name>retry</name>
+                    <state>STOPPED</state>
+                    <type>OUTPUT_PORT</type>
+                    <validationErrors>'Port 'retry'' is invalid because Port has no outgoing connections</validationErrors>
+                </outputPorts>
+                <processors>
+                    <id>266f4676-ac75-30ee-0000-000000000000</id>
+                    <parentGroupId>d0d14c73-d603-3fa8-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>2013.0869140625</x>
+                        <y>544.2190051269531</y>
+                    </position>
+                    <versionedComponentId>266f4676-ac75-30ee-8cd8-8e1a1c9ecaf2</versionedComponentId>
+                    <bundle>
+                        <artifact>nifi-update-attribute-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.21.0</version>
+                    </bundle>
+                    <config>
+                        <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Delete Attributes Expression</key>
+<value>
+    <name>Delete Attributes Expression</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Store State</key>
+<value>
+    <name>Store State</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Stateful Variables Initial Value</key>
+<value>
+    <name>Stateful Variables Initial Value</name>
+</value>
+                            </entry>
+                            <entry>
+<key>canonical-value-lookup-cache-size</key>
+<value>
+    <name>canonical-value-lookup-cache-size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>retryCount</key>
+<value>
+    <name>retryCount</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Delete Attributes Expression</key>
+                            </entry>
+                            <entry>
+<key>Store State</key>
+<value>Do not store state</value>
+                            </entry>
+                            <entry>
+<key>Stateful Variables Initial Value</key>
+                            </entry>
+                            <entry>
+<key>canonical-value-lookup-cache-size</key>
+<value>100</value>
+                            </entry>
+                            <entry>
+<key>retryCount</key>
+<value>0</value>
+                            </entry>
+                        </properties>
+                        <retryCount>0</retryCount>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>retryCount=0</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                        <retry>false</retry>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
+                </processors>
+                <processors>
+                    <id>3f5bd6e4-4bbb-3620-0000-000000000000</id>
+                    <parentGroupId>d0d14c73-d603-3fa8-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>2024.0</x>
+                        <y>16.0</y>
+                    </position>
+                    <versionedComponentId>3f5bd6e4-4bbb-3620-90f0-51b550c87e1a</versionedComponentId>
+                    <bundle>
+                        <artifact>nifi-update-attribute-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.21.0</version>
+                    </bundle>
+                    <config>
+                        <annotationData>&lt;criteria&gt;
+    &lt;flowFilePolicy&gt;USE_CLONE&lt;/flowFilePolicy&gt;
+    &lt;rules&gt;
+        &lt;actions&gt;
+            &lt;attribute&gt;retryCount&lt;/attribute&gt;
+            &lt;id&gt;fc5de9d9-e9d8-4724-9026-adc251e64664&lt;/id&gt;
+            &lt;value&gt;${retryCount:plus(1)}&lt;/value&gt;
+        &lt;/actions&gt;
+        &lt;conditions&gt;
+            &lt;expression&gt;${retryCount:gt(0)}&lt;/expression&gt;
+            &lt;id&gt;1bcb0886-548b-487b-b9c9-2f5be4a9f22d&lt;/id&gt;
+        &lt;/conditions&gt;
+        &lt;id&gt;ba69ad76-528d-4b64-856d-97f8b75335d0&lt;/id&gt;
+        &lt;name&gt;initialized&lt;/name&gt;
+    &lt;/rules&gt;
+    &lt;rules&gt;
+        &lt;actions&gt;
+            &lt;attribute&gt;retryCount&lt;/attribute&gt;
+            &lt;id&gt;12438de1-4484-48d2-8406-902e2eeec5df&lt;/id&gt;
+            &lt;value&gt;1&lt;/value&gt;
+        &lt;/actions&gt;
+        &lt;conditions&gt;
+            &lt;expression&gt;${retryCount:gt(0):not()}&lt;/expression&gt;
+            &lt;id&gt;8d23dd53-24ba-4ae1-99a5-5fff51f24653&lt;/id&gt;
+        &lt;/conditions&gt;
+        &lt;id&gt;fd96e132-5298-4835-9304-dd718bed1a3b&lt;/id&gt;
+        &lt;name&gt;uninitialized&lt;/name&gt;
+    &lt;/rules&gt;
+&lt;/criteria&gt;</annotationData>
+                        <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Delete Attributes Expression</key>
+<value>
+    <name>Delete Attributes Expression</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Store State</key>
+<value>
+    <name>Store State</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Stateful Variables Initial Value</key>
+<value>
+    <name>Stateful Variables Initial Value</name>
+</value>
+                            </entry>
+                            <entry>
+<key>canonical-value-lookup-cache-size</key>
+<value>
+    <name>canonical-value-lookup-cache-size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>retryCount</key>
+<value>
+    <name>retryCount</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Delete Attributes Expression</key>
+                            </entry>
+                            <entry>
+<key>Store State</key>
+<value>Do not store state</value>
+                            </entry>
+                            <entry>
+<key>Stateful Variables Initial Value</key>
+                            </entry>
+                            <entry>
+<key>canonical-value-lookup-cache-size</key>
+<value>100</value>
+                            </entry>
+                            <entry>
+<key>retryCount</key>
+<value>${retryCount:plus(1)}</value>
+                            </entry>
+                        </properties>
+                        <retryCount>0</retryCount>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>Set/Increment retryCount</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                        <retry>false</retry>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
+                </processors>
+                <processors>
+                    <id>4219127a-8fea-35e2-0000-000000000000</id>
+                    <parentGroupId>d0d14c73-d603-3fa8-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>2292.1728515625</x>
+                        <y>179.84168212890626</y>
+                    </position>
+                    <versionedComponentId>4219127a-8fea-35e2-a2a6-caae41c2e754</versionedComponentId>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.21.0</version>
+                    </bundle>
+                    <config>
+                        <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Routing Strategy</key>
+<value>
+    <name>Routing Strategy</name>
+</value>
+                            </entry>
+                            <entry>
+<key>email</key>
+<value>
+    <name>email</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Routing Strategy</key>
+<value>Route to Property name</value>
+                            </entry>
+                            <entry>
+<key>email</key>
+<value>${retryCount:gt(3)}</value>
+                            </entry>
+                        </properties>
+                        <retryCount>0</retryCount>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>Route On Retry Threshold</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>email</name>
+                        <retry>false</retry>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>unmatched</name>
+                        <retry>false</retry>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.RouteOnAttribute</type>
+                </processors>
+                <processors>
+                    <id>85e971e4-908c-380d-0000-000000000000</id>
+                    <parentGroupId>d0d14c73-d603-3fa8-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>2294.919189453125</x>
+                        <y>359.614892578125</y>
+                    </position>
+                    <versionedComponentId>85e971e4-908c-380d-8726-9b9d9baf9dfc</versionedComponentId>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.21.0</version>
+                    </bundle>
+                    <config>
+                        <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>SMTP Hostname</key>
+<value>
+    <name>SMTP Hostname</name>
+</value>
+                            </entry>
+                            <entry>
+<key>SMTP Port</key>
+<value>
+    <name>SMTP Port</name>
+</value>
+                            </entry>
+                            <entry>
+<key>authorization-mode</key>
+<value>
+    <name>authorization-mode</name>
+</value>
+                            </entry>
+                            <entry>
+<key>oauth2-access-token-provider</key>
+<value>
+    <dependencies>
+        <dependentValues>oauth-based-authorization-mode</dependentValues>
+        <propertyName>authorization-mode</propertyName>
+    </dependencies>
+    <identifiesControllerService>org.apache.nifi.oauth2.OAuth2AccessTokenProvider</identifiesControllerService>
+    <name>oauth2-access-token-provider</name>
+</value>
+                            </entry>
+                            <entry>
+<key>SMTP Username</key>
+<value>
+    <name>SMTP Username</name>
+</value>
+                            </entry>
+                            <entry>
+<key>SMTP Password</key>
+<value>
+    <dependencies>
+        <dependentValues>password-based-authorization-mode</dependentValues>
+        <propertyName>authorization-mode</propertyName>
+    </dependencies>
+    <name>SMTP Password</name>
+</value>
+                            </entry>
+                            <entry>
+<key>SMTP Auth</key>
+<value>
+    <name>SMTP Auth</name>
+</value>
+                            </entry>
+                            <entry>
+<key>SMTP TLS</key>
+<value>
+    <name>SMTP TLS</name>
+</value>
+                            </entry>
+                            <entry>
+<key>SMTP Socket Factory</key>
+<value>
+    <name>SMTP Socket Factory</name>
+</value>
+                            </entry>
+                            <entry>
+<key>SMTP X-Mailer Header</key>
+<value>
+    <name>SMTP X-Mailer Header</name>
+</value>
+                            </entry>
+                            <entry>
+<key>attribute-name-regex</key>
+<value>
+    <name>attribute-name-regex</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Content Type</key>
+<value>
+    <name>Content Type</name>
+</value>
+                            </entry>
+                            <entry>
+<key>From</key>
+<value>
+    <name>From</name>
+</value>
+                            </entry>
+                            <entry>
+<key>To</key>
+<value>
+    <name>To</name>
+</value>
+                            </entry>
+                            <entry>
+<key>CC</key>
+<value>
+    <name>CC</name>
+</value>
+                            </entry>
+                            <entry>
+<key>BCC</key>
+<value>
+    <name>BCC</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Subject</key>
+<value>
+    <name>Subject</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Message</key>
+<value>
+    <name>Message</name>
+</value>
+                            </entry>
+                            <entry>
+<key>email-ff-content-as-message</key>
+<value>
+    <name>email-ff-content-as-message</name>
+</value>
+                            </entry>
+                            <entry>
+<key>input-character-set</key>
+<value>
+    <name>input-character-set</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Attach File</key>
+<value>
+    <name>Attach File</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Include All Attributes In Message</key>
+<value>
+    <name>Include All Attributes In Message</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>SMTP Hostname</key>
+<value>myhost.com</value>
+                            </entry>
+                            <entry>
+<key>SMTP Port</key>
+<value>25</value>
+                            </entry>
+                            <entry>
+<key>authorization-mode</key>
+<value>password-based-authorization-mode</value>
+                            </entry>
+                            <entry>
+<key>oauth2-access-token-provider</key>
+                            </entry>
+                            <entry>
+<key>SMTP Username</key>
+                            </entry>
+                            <entry>
+<key>SMTP Password</key>
+                            </entry>
+                            <entry>
+<key>SMTP Auth</key>
+<value>true</value>
+                            </entry>
+                            <entry>
+<key>SMTP TLS</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>SMTP Socket Factory</key>
+<value>javax.net.ssl.SSLSocketFactory</value>
+                            </entry>
+                            <entry>
+<key>SMTP X-Mailer Header</key>
+<value>NiFi</value>
+                            </entry>
+                            <entry>
+<key>attribute-name-regex</key>
+                            </entry>
+                            <entry>
+<key>Content Type</key>
+<value>text/plain</value>
+                            </entry>
+                            <entry>
+<key>From</key>
+<value>nifi@myhost.com</value>
+                            </entry>
+                            <entry>
+<key>To</key>
+<value>admin@myhost.com</value>
+                            </entry>
+                            <entry>
+<key>CC</key>
+                            </entry>
+                            <entry>
+<key>BCC</key>
+                            </entry>
+                            <entry>
+<key>Subject</key>
+<value>Message from NiFi</value>
+                            </entry>
+                            <entry>
+<key>Message</key>
+<value>Error ______</value>
+                            </entry>
+                            <entry>
+<key>email-ff-content-as-message</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>input-character-set</key>
+<value>UTF-8</value>
+                            </entry>
+                            <entry>
+<key>Attach File</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Include All Attributes In Message</key>
+<value>false</value>
+                            </entry>
+                        </properties>
+                        <retryCount>0</retryCount>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <executionNodeRestricted>false</executionNodeRestricted>
+                    <name>PutEmail</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>failure</name>
+                        <retry>false</retry>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                        <retry>false</retry>
+                    </relationships>
+                    <state>STOPPED</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.PutEmail</type>
+                </processors>
+            </contents>
+            <defaultBackPressureDataSizeThreshold>1 GB</defaultBackPressureDataSizeThreshold>
+            <defaultBackPressureObjectThreshold>10000</defaultBackPressureObjectThreshold>
+            <defaultFlowFileExpiration>0 sec</defaultFlowFileExpiration>
+            <flowfileConcurrency>UNBOUNDED</flowfileConcurrency>
+            <flowfileOutboundPolicy>STREAM_WHEN_AVAILABLE</flowfileOutboundPolicy>
+            <name>Retry 3 Times, Email, then Wait</name>
+            <variables/>
+        </processGroups>
+    </snippet>
+    <timestamp>08/17/2023 16:24:28 UTC</timestamp>
+</template>
